@@ -205,15 +205,6 @@ included on her website. Since Valerie has spent her entire life practicing the
 ancient art of 'chopping up veggies', she is not a technology oriented gal.
 Let's help out our good friend Valerie!
 
-First, we are going to great a branch to create Valerie's website.
-
-```bash
-git checkout -b vals-website
-```
-
-Once we have the branch created, open the `/practice` directory so we can start
-developing this masterpiece!
-
 #### HTML Best Practices: Inputs
 Often websites like Valerie's need to get input from the user - names, addresses,
 and other information. When using the `<input>` element, it should ALWAYS be
@@ -251,6 +242,7 @@ about debugging CSS is in the additional resources.
 
 ### Lab: Create a cookie site
 
+The lab for this talk is located [here](https://git.generalassemb.ly/ga-wdi-boston/html-css-lab)
 In squads, you're going to collaboratively create a new webpage using the raw
 content found inside `index.html` (using semantic tags where possible).
 
