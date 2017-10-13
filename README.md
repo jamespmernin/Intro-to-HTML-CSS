@@ -121,7 +121,7 @@ selector {
 A specific example is
 
 ```css
-div {
+.article-header {
   height: 100px;
   width: 100px;
   background-color: green;
@@ -183,7 +183,7 @@ use; it's rarely necessary to use an ID. [CSS Selectors Cheat Sheet](https://gis
 1. In general, we want to use hexadecimal colors, like so:
 
 ```css
-div {
+.article-header {
   background-color: #008000;
   /* is better than */
   background-color: green;
