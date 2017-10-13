@@ -15,7 +15,7 @@ linking to an external stylesheet with `<link>`.
 
 ## Preparation
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Create a new branch, `training`, for your work.
 1.  Install dependencies with `npm install`.
@@ -323,7 +323,7 @@ master like you did with your html branch
 
 The last thing we're going to do is **deploy** (i.e. host) this web page through
 a service that GitHub provides called GitHub pages. To do this, follow the
- instructions given in the [GitHub Pages Deployment Guide](https://github.com/ga-wdi-boston/gh-pages-deployment-guide).
+ instructions given in the [GitHub Pages Deployment Guide](https://git.generalassemb.ly/ga-wdi-boston/gh-pages-deployment-guide).
 
 #### Bonus (Optional Section)
 
