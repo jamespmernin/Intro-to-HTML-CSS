@@ -3,29 +3,26 @@ body {
   font-size: 16px;
   font-weight: bold;
 }
-.title {
-    background: red;
-    text-align: center;
+.contact-form {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 20px;
+  margin-left: 150px;
+  padding: 10px;
 }
-ul {
-  font-size: 18px;
-}
-
-.paragraph {
-  margin-left: 20px;
-  margin-top: 20px;
-  line-height: 1.5;
-}
-
 .food-img {
   height: 100px;
   width: 100px;
 }
-
-.contact-form {
-  margin: 20px;
-  padding: 10px;
-  border: 2px solid black;
-  border-radius: 5px;
-  margin-left: 150px;
+.paragraph {
+  line-height: 1.5;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+ul {
+  font-size: 18px;
+}
+.title {
+    background: red;
+    text-align: center;
 }
