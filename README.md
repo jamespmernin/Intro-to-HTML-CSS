@@ -15,7 +15,7 @@ linking to an external stylesheet with `<link>`.
 
 ## Preparation
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
 1.  Create a new branch, `training`, for your work.
 1.  Install dependencies with `npm install`.
@@ -121,7 +121,7 @@ selector {
 A specific example is
 
 ```css
-div {
+.article-header {
   height: 100px;
   width: 100px;
   background-color: green;
@@ -178,6 +178,18 @@ in one place, on a stylesheet.
 when there is no other way to select an element. There are a lot of selectors to
 use; it's rarely necessary to use an ID. [CSS Selectors Cheat Sheet](https://gist.github.com/smutnyleszek/809a69dd05e1d5f12d01)
 
+#### CSS Best Practices: Colors
+
+1. In general, we want to use hexadecimal colors, like so:
+
+```css
+.article-header {
+  background-color: #008000;
+  /* is better than */
+  background-color: green;
+}
+```
+
 #### Broswer Template
 
 At this point, it is probably helpful to introduce you to the Browser Template that you will be using in many of your projects. There may be a few things happening in here that you're not familiar with (and that's okay), but the most impotant thing to understand about the Browser Template is how it is structured in order to add styles to your HTML.
@@ -192,15 +204,6 @@ website. Valerie has been so gracious to provide us with what she wants to be
 included on her website. Since Valerie has spent her entire life practicing the
 ancient art of 'chopping up veggies', she is not a technology oriented gal.
 Let's help out our good friend Valerie!
-
-First, we are going to great a branch to create Valerie's website.
-
-```bash
-git checkout -b vals-website
-```
-
-Once we have the branch created, open the `/practice` directory so we can start
-developing this masterpiece!
 
 #### HTML Best Practices: Inputs
 Often websites like Valerie's need to get input from the user - names, addresses,
@@ -239,6 +242,7 @@ about debugging CSS is in the additional resources.
 
 ### Lab: Create a cookie site
 
+The lab for this talk is located [here](https://git.generalassemb.ly/ga-wdi-boston/html-css-lab)
 In squads, you're going to collaboratively create a new webpage using the raw
 content found inside `index.html` (using semantic tags where possible).
 
@@ -319,7 +323,7 @@ master like you did with your html branch
 
 The last thing we're going to do is **deploy** (i.e. host) this web page through
 a service that GitHub provides called GitHub pages. To do this, follow the
- instructions given in the [GitHub Pages Deployment Guide](https://github.com/ga-wdi-boston/gh-pages-deployment-guide).
+ instructions given in the [GitHub Pages Deployment Guide](https://git.generalassemb.ly/ga-wdi-boston/gh-pages-deployment-guide).
 
 #### Bonus (Optional Section)
 
