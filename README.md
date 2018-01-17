@@ -23,7 +23,7 @@ Developers should, at the end of the lesson, be able to:
 
 Let's go over the basics of HTML and CSS! Most of you should have some
 experience with this stuff already, since you should've all gone through
-[Dash](dash.generalassemb.ly) and each built a simple website as part of your
+[Dash](https://dash.generalassemb.ly/) and each built a simple website as part of your
 admissions process.
 
 ### HTML
