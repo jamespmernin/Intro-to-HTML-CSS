@@ -72,7 +72,7 @@ text, it is actually a block element
 #### HTML Attributes
 
 All HTML elements are able to support attributes. Attributes vary depending on
- their use, but always live within the opening tag of an HTML element.
+their use, but always live within the opening tag of an HTML element.
 
 For example:
 
@@ -189,12 +189,6 @@ use; it's rarely necessary to use an ID. [CSS Selectors Cheat Sheet](https://gis
   background-color: green;
 }
 ```
-
-#### Broswer Template
-
-At this point, it is probably helpful to introduce you to the Browser Template that you will be using in many of your projects. There may be a few things happening in here that you're not familiar with (and that's okay), but the most impotant thing to understand about the Browser Template is how it is structured in order to add styles to your HTML.
-
-I know we just showed you three distinct ways to add CSS to a page, but things are done a little bit differently in the Browser Template. This repo actually relies on said template, so let's take a look at how we would add styling to the example HTML page within. (Note, we will have to use `grunt serve` in order to view this page in our browser).
 
 
 ### Code-Along: Valerie's Veggie Shop
