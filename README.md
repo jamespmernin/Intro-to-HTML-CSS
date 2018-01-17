@@ -48,6 +48,10 @@ HTML tags generally come in matched pairs, with the format `<tag> ... </tag>`.
 The first tag is called the _opening tag_, while the second is called the
 _closing tag_.
 
+HTML5 encourages the use of _semantic_ tags - tags whose names reflect their
+content and role within the page. Examples of this include `<section>`,
+`<header>`, and `<nav>`.
+
 There have historically been two general kinds of HTML elements: **block**
 elements and **inline** elements. Block elements have built-in line breaks,
 causing them to automatically stack vertically, while inline elements don't.
@@ -64,9 +68,6 @@ text, it is actually a block element
 |  `<header>` |  `<strong>`  |
 |    `<p>`    |     `<a>`    |
 
-HTML5 encourages the use of _semantic_ tags - tags whose names reflect their
-content and role within the page. Examples of this include `<section>`,
-`<header>`, and `<nav>`.
 
 #### HTML Attributes
 
