@@ -212,7 +212,7 @@ Wrapping the input in a label allows us to avoid using the `for` attribute on
 the label and an `id` on the input.
 
 
-### Lab: Create a cookie site
+### Lab: Create a [cookie site](https://git.generalassemb.ly/ga-wdi-boston/html-css-lab)
 
 The lab for this talk is located [here](https://git.generalassemb.ly/ga-wdi-boston/html-css-lab)
 In squads, you're going to collaboratively create a new webpage using the raw
