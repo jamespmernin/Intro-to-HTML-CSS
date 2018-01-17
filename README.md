@@ -195,9 +195,7 @@ use; it's rarely necessary to use an ID. [CSS Selectors Cheat Sheet](https://gis
 
 Together we are going to look at our good friend Valerie's proposal for her
 website. Valerie has been so gracious to provide us with what she wants to be
-included on her website. Since Valerie has spent her entire life practicing the
-ancient art of 'chopping up veggies', she is not a technology oriented gal.
-Let's help out our good friend Valerie!
+included on her website. Let's help out our good friend Valerie!
 
 #### HTML Best Practices: Inputs
 Often websites like Valerie's need to get input from the user - names, addresses,
