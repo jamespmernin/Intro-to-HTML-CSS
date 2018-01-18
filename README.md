@@ -212,7 +212,8 @@ Wrapping the input in a label allows us to avoid using the `for` attribute on
 the label and an `id` on the input.
 
 
-### Lab: Create a [cookie site](https://git.generalassemb.ly/ga-wdi-boston/html-css-lab)
+### Lab: Create a Cookie Site
+Now that we've biult a site together, let's take a look at [cookie site lab](https://git.generalassemb.ly/ga-wdi-boston/html-css-lab)
 
 
 ## Additional Resources
@@ -221,7 +222,7 @@ Here are some sites you might want to bookmark, if you haven't already.
 
 -   [HTML5 Cheatsheet](http://htmlcheatsheet.com/)
 -   [CSS Cheatsheet](http://htmlcheatsheet.com/css/)
-- [LEAVE CSS ALONE!](https://christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)
+-   [LEAVE CSS ALONE!](https://christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)
 
 
 ## [License](LICENSE)
