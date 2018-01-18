@@ -219,11 +219,10 @@ the label and an `id` on the input.
 
 Here are some sites you might want to bookmark, if you haven't already.
 
--   [HTML5 Element Flowchart](http://html5doctor.com/lets-talk-about-semantics/)
--   [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
--   [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
--   [CSS-Tricks](https://css-tricks.com)
--   [Using the browser to debug CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Debugging_CSS)
+-   [HTML5 Cheatsheet](http://htmlcheatsheet.com/)
+-   [CSS Cheatsheet](http://htmlcheatsheet.com/css/)
+- [LEAVE CSS ALONE!](https://christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)
+
 
 ## [License](LICENSE)
 
