@@ -223,10 +223,13 @@ Here are some sites you might want to bookmark, if you haven't already.
 -   [HTML5 Cheatsheet](http://htmlcheatsheet.com/)
 -   [CSS Cheatsheet](http://htmlcheatsheet.com/css/)
 -   [LEAVE CSS ALONE!](https://christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)
+- [Learn to Code HTML & CSS](https://learn.shayhowe.com/)
+- [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
+- [Introduction to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)
 
 
 ## [License](LICENSE)
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.
