@@ -142,10 +142,10 @@ than classes, which are more 'specific' than tags, which are more 'specific'
 than traits inherited from parent elements.
 
 - Specificity is actually a very precise calculation:
-   -+1000pts for each inline style attribute
-   -+100pts for each ID
-   -+10pts for each attribute, class, or pseudo-class
-   -+1pt for each element or pseudo-element tag
+   - +1000pts for each inline style attribute
+   - +100pts for each ID
+   - +10pts for each attribute, class, or pseudo-class
+   - +1pt for each element or pseudo-element tag
 
 - For a more detailed explanation, see this [blog
   post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
@@ -180,7 +180,7 @@ To add CSS to a page, either include it
 
 #### CSS Best Practices: Colors
 
-1. In general, we want to use hexadecimal colors, like so:
+In general, we want to use hexadecimal colors, like so:
 
 ```css
 .article-header {
@@ -213,7 +213,7 @@ the label and an `id` on the input.
 
 ### Lab: Create a Cookie Site
 
-Now that we've built a site together, let's take a look at [cookie site lab](https://git.generalassemb.ly/ga-wdi-boston/html-css-lab)
+Now that we've built a site together, let's take a look at [cookie site lab](https://git.generalassemb.ly/ga-wdi-boston/html-css-lab).
 
 ## Additional Resources
 
