@@ -6,25 +6,25 @@
 
 Developers should, at the end of the lesson, be able to:
 
--   Write out the basic skeleton of an HTML page.
--   Add CSS to an HTML file by linking to an external stylesheet with `<link>`.
--   Explain at a high level how CSS styling works.
--   Write CSS and use it to add styling to a basic page.
--   Deploy a basic web page to GitHub Pages.
+- Write out the basic skeleton of an HTML page.
+- Add CSS to an HTML file by linking to an external stylesheet with `<link>`.
+- Explain at a high level how CSS styling works.
+- Write CSS and use it to add styling to a basic page.
+- Deploy a basic web page to GitHub Pages.
 
 ## Preparation
 
-1.  [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
+1. [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
     this repository.
-1.  Create a new branch, `training`, for your work.
-1.  Install dependencies with `npm install`.
+1. Create a new branch, `training`, for your work.
+1. Install dependencies with `npm install`.
 
 ## Overview
 
 Let's go over the basics of HTML and CSS! Most of you should have some
 experience with this stuff already, since you should've all gone through
-[Dash](https://dash.generalassemb.ly/) and each built a simple website as part of your
-admissions process.
+[Dash](https://dash.generalassemb.ly/) and each built a simple website as part
+of your admissions process.
 
 ### HTML
 
@@ -68,7 +68,6 @@ text, it is actually a block element
 |  `<header>` |  `<strong>`  |
 |    `<p>`    |     `<a>`    |
 
-
 #### HTML Attributes
 
 All HTML elements are able to support attributes. Attributes vary depending on
@@ -80,7 +79,7 @@ For example:
 <a href="http://google.com">Google</a>
 ```
 
-Here, `href=""` is an attribtue.
+Here, `href=""` is an attribute.
 
 Attributes will always follow the `attribute-name="value"` convention.
 
@@ -128,8 +127,8 @@ A specific example is
 }
 ```
 
--   This looks similar to a JS object literal; however, one important difference
-is that key-value pairs are separated by _semicolons_ instead of _commas_.
+- This looks similar to a JS object literal; however, one important difference
+  is that key-value pairs are separated by _semicolons_ instead of _commas_.
 
 Since CSS is just a collection of style rules, one key concern is what happens
 if two rules disagree. CSS has two mechanisms to resolve these disagreements
@@ -142,16 +141,16 @@ out. The short version of how specificity works is that IDs are more 'specific'
 than classes, which are more 'specific' than tags, which are more 'specific'
 than traits inherited from parent elements.
 
--   Specificity is actually a very precise calculation:
-   -+1000pts for each inline style attribute
-   -+100pts for each ID
-   -+10pts for each attribute, class, or pseudo-class
-   -+1pt for each element or pseudo-element tag
+- Specificity is actually a very precise calculation:
+   - +1000pts for each inline style attribute
+   - +100pts for each ID
+   - +10pts for each attribute, class, or pseudo-class
+   - +1pt for each element or pseudo-element tag
 
--   For a more detailed explanation, see this [blog
-post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
-on CSS specificity, or play around with this [CSS specificity
-calculator](http://specificity.keegan.st/).
+- For a more detailed explanation, see this [blog
+  post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
+  on CSS specificity, or play around with this [CSS specificity
+  calculator](http://specificity.keegan.st/).
 
 The second mechanism handles an edge case of the first: what happens if two
 _equally specific_ rules disagree? In that case, CSS rules that come 'later'
@@ -160,27 +159,28 @@ _equally specific_ rules disagree? In that case, CSS rules that come 'later'
 
 To add CSS to a page, either include it
 
-1.  Inline, within an element.
+1. Inline, within an element.
 
-1.  Between two `<style>` tags, typically in the the `<head>` of the document.
+1. Between two `<style>` tags, typically in the the `<head>` of the document.
 
-1.  **Most Common** In a separate file referred to by a `<link>` tag, also
-typically in the the `<head>`. The syntax for using a `<link>` tag is `<link
-rel="stylesheet" type="text/css" href="...">` where 'href' is set to the
-location of the desired stylesheet.
+1. **Most Common** In a separate file referred to by a `<link>` tag, also
+  typically in the the `<head>`. The syntax for using a `<link>` tag is `<link
+  rel="stylesheet" type="text/css" href="...">` where 'href' is set to the
+  location of the desired stylesheet.
 
 #### CSS Best Practices: Selectors
 
 1. In general, we want to _avoid inline styles_ - it's best to keep all your styles
-in one place, on a stylesheet.
+  in one place, on a stylesheet.
 
 1. USE IDs SPARINGLY. IDs should be reserved for emergency situations only,
-when there is no other way to select an element. There are a lot of selectors to
-use; it's rarely necessary to use an ID. [CSS Selectors Cheat Sheet](https://gist.github.com/smutnyleszek/809a69dd05e1d5f12d01)
+  when there is no other way to select an element. There are a lot of selectors to
+  use; it's rarely necessary to use an ID.
+  [CSS Selectors Cheat Sheet](https://gist.github.com/smutnyleszek/809a69dd05e1d5f12d01)
 
 #### CSS Best Practices: Colors
 
-1. In general, we want to use hexadecimal colors, like so:
+In general, we want to use hexadecimal colors, like so:
 
 ```css
 .article-header {
@@ -190,7 +190,6 @@ use; it's rarely necessary to use an ID. [CSS Selectors Cheat Sheet](https://gis
 }
 ```
 
-
 ### Code-Along: Valerie's Veggie Shop
 
 Together we are going to look at our good friend Valerie's proposal for her
@@ -198,6 +197,7 @@ website. Valerie has been so gracious to provide us with what she wants to be
 included on her website. Let's help out our good friend Valerie!
 
 #### HTML Best Practices: Inputs
+
 Often websites like Valerie's need to get input from the user - names, addresses,
 and other information. When using the `<input>` element, it should ALWAYS be
 wrapped in a `<form>`. This is helpful both for accessibility (screen readers)
@@ -211,22 +211,20 @@ Input elements should also be wrapped in a label element:
 Wrapping the input in a label allows us to avoid using the `for` attribute on
 the label and an `id` on the input.
 
-
 ### Lab: Create a Cookie Site
-Now that we've built a site together, let's take a look at [cookie site lab](https://git.generalassemb.ly/ga-wdi-boston/html-css-lab)
 
+Now that we've built a site together, let's take a look at [cookie site lab](https://git.generalassemb.ly/ga-wdi-boston/html-css-lab).
 
 ## Additional Resources
 
 Here are some sites you might want to bookmark, if you haven't already.
 
--   [HTML5 Cheatsheet](http://htmlcheatsheet.com/)
--   [CSS Cheatsheet](http://htmlcheatsheet.com/css/)
--   [LEAVE CSS ALONE!](https://christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)
+- [HTML5 Cheatsheet](http://htmlcheatsheet.com/)
+- [CSS Cheatsheet](http://htmlcheatsheet.com/css/)
+- [LEAVE CSS ALONE!](https://christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)
 - [Learn to Code HTML & CSS](https://learn.shayhowe.com/)
 - [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 - [Introduction to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)
-
 
 ## [License](LICENSE)
 
