@@ -176,7 +176,7 @@ To add CSS to a page, either include it
 1. USE IDs SPARINGLY. IDs should be reserved for emergency situations only,
   when there is no other way to select an element. There are a lot of selectors to
   use; it's rarely necessary to use an ID.
-  [CSS Selectors Cheat Sheet](https://gist.github.com/smutnyleszek/809a69dd05e1d5f12d01)
+  [CSS Selectors Cheat Sheet](https://gist.github.com/magicznyleszek/809a69dd05e1d5f12d01)
 
 #### CSS Best Practices: Colors
 
