@@ -142,10 +142,10 @@ than classes, which are more 'specific' than tags, which are more 'specific'
 than traits inherited from parent elements.
 
 - Specificity is actually a very precise calculation:
-   - +1000pts for each inline style attribute
-   - +100pts for each ID
-   - +10pts for each attribute, class, or pseudo-class
-   - +1pt for each element or pseudo-element tag
+  - +1000pts for each inline style attribute
+  - +100pts for each ID
+  - +10pts for each attribute, class, or pseudo-class
+  - +1pt for each element or pseudo-element tag
 
 - For a more detailed explanation, see this [blog
   post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
