@@ -11,9 +11,7 @@ npm update --save-dev
   # note: make sure it works
 rm package.json.bak
 ```
-
-- The above sed command replaces all of the versions with an `*`.
-- Then npm updates grab the latest version and replace.
+- the above sed command replaces all of the versions with an `*`. Then npm updates grab the latest version and replace.
 
 ## Structure
 
