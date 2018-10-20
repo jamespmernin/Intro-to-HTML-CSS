@@ -142,10 +142,10 @@ than classes, which are more 'specific' than tags, which are more 'specific'
 than traits inherited from parent elements.
 
 - Specificity is actually a very precise calculation:
-   - +1000pts for each inline style attribute
-   - +100pts for each ID
-   - +10pts for each attribute, class, or pseudo-class
-   - +1pt for each element or pseudo-element tag
+  - +1000pts for each inline style attribute
+  - +100pts for each ID
+  - +10pts for each attribute, class, or pseudo-class
+  - +1pt for each element or pseudo-element tag
 
 - For a more detailed explanation, see this [blog
   post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
@@ -176,7 +176,7 @@ To add CSS to a page, either include it
 1. USE IDs SPARINGLY. IDs should be reserved for emergency situations only,
   when there is no other way to select an element. There are a lot of selectors to
   use; it's rarely necessary to use an ID.
-  [CSS Selectors Cheat Sheet](https://gist.github.com/smutnyleszek/809a69dd05e1d5f12d01)
+  [CSS Selectors Cheat Sheet](https://gist.github.com/magicznyleszek/809a69dd05e1d5f12d01)
 
 #### CSS Best Practices: Colors
 
