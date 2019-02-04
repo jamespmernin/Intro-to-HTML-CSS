@@ -18,6 +18,7 @@ Developers should, at the end of the lesson, be able to:
     this repository.
 1. Create a new branch, `training`, for your work.
 1. Install dependencies with `npm install`.
+1. Run with `grunt serve`.
 
 ## Overview
 
