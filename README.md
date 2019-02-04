@@ -18,13 +18,12 @@ Developers should, at the end of the lesson, be able to:
     this repository.
 1. Create a new branch, `training`, for your work.
 1. Install dependencies with `npm install`.
-
+1. Run with `grunt serve`
 ## Overview
 
 Let's go over the basics of HTML and CSS! Most of you should have some
-experience with this stuff already, since you should've all gone through
-[Dash](https://dash.generalassemb.ly/) and each built a simple website as part
-of your admissions process.
+experience with this stuff already, since you completed the
+[myGA](https://my.generalassemb.ly/) pre-work and each built a simple website as part of your admissions process.
 
 ### HTML
 
@@ -44,22 +43,17 @@ All HTML pages have the same basic structure:
   </html>
 ```
 
-HTML tags generally come in matched pairs, with the format `<tag> ... </tag>`.
-The first tag is called the _opening tag_, while the second is called the
-_closing tag_.
+HTML tags generally come in matched pairs, with the format `<tag> ... </tag>`. The first tag is called the _opening tag_, while the second is called the _closing tag_.
 
-HTML5 encourages the use of _semantic_ tags - tags whose names reflect their
-content and role within the page. Examples of this include `<section>`,
-`<header>`, and `<nav>`.
+HTML5 encourages the use of _semantic_ tags whose names reflect their content and role within the page. Some of the new elements that HTML5 added are: `<section>`, `<header>`, `<nav>`, `<footer>`, and `<main>`.  These tags help us to structure our content better and vastly improve accessibility for those who experience our content in non-visual ways.
 
-There have historically been two general kinds of HTML elements: **block**
-elements and **inline** elements. Block elements have built-in line breaks,
-causing them to automatically stack vertically, while inline elements don't.
+Historically, elements could be classified as either: **block** elements or **inline** elements. Block elements have built-in line breaks, causing them to automatically _stack vertically_, while inline elements wrap within their containing elements.  One way we can distinguish block elements from inline elements is to think of block elements as relating to parts of the page, creating  "larger" structures than inline elements.
 
-Below are some examples of block and inline elements. Generally, block elements
-relate to space on the page, while inline elements relate to text; however,
-there are exceptions to that guideline. For instance, although `<p>` relates to
-text, it is actually a block element
+Even though the HTML5 specification provides different categories for elements, by default, all elements behave by either creating a new line or wrapping inside of other elements.  These two characteristics are important to understand because they determine how elements can be styled.
+
+Inline elements are only as large as their contents such that they cannot have `width` or `height` set with CSS (with one exception: `<img>` is technically an inline element), and `margin` and `padding` can only be applied to the left or right of the element.  Inline elements can also be aligned within a containing block element that has the `text-align` property set on it (including `<img>` elements).
+
+Examples of block and inline elements:
 
 |    Block    |    Inline    |
 |:-----------:|:------------:|
@@ -70,8 +64,7 @@ text, it is actually a block element
 
 #### HTML Attributes
 
-All HTML elements are able to support attributes. Attributes vary depending on
-their use, but always live within the opening tag of an HTML element.
+All HTML elements are able to support attributes. Attributes vary depending on their use, but always live within the opening tag of an HTML element.
 
 For example:
 
@@ -84,31 +77,32 @@ Here, `href=""` is an attribute.
 Attributes will always follow the `attribute-name="value"` convention.
 
 Below are a list of extremely helpful attributes that allow you to add
-custom meta-information to your HTML elements. They become immensely helpful
-when targeting these elements with CSS and/or JavaScript (we'll see this more
-in jQuery).
+custom meta-information to your HTML elements. They become immensely helpful when targeting these elements with CSS and/or JavaScript (we'll see this more in jQuery).
 
 |  Attribute  |     Usage    |
 |:-----------:|:------------:|
 |     [`id`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id)    | Value can only be used once, elements can only have max of one ID. Creates a unique identifier for an element. |
 | [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class) | Value can be used multiple times, elements can have many classes. |
-|  [`data-*`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-%2A) | Very helpful when used with jQuery. Allows data to be bound to HTML element using custom `data-<custom>="<custom value>"` convention. |
+|  [`data-*`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-%2A) | Very helpful when used with the CSS content property and jQuery. Allows data to be bound to HTML element using custom `data-<custom>="<custom value>"` convention. |
+
+#### HTML Best Practices: Forms and Inputs
+
+Often websites need to get input from the user - names, addresses, and other information. When using the `<input>` element, it should ALWAYS be wrapped in a `<form>`. This is helpful both for accessibility (such as screen readers) and for accessing that data using JavaScript.
+
+For accessibility, `<input>` elements should have an `id` attribute, which is used in combination with the `for` attribute on a `<label>`:
+
+```html
+<label for="lastname">Last Name</label>
+<input type="text" name="lastName" id="lastname">
+```
 
 ### CSS
 
-In the early days of the web, people used to style their pages using explicit
-styling tags : `<b>` for bold, `<i>` for italics, etc. But this was very
-inflexible - you could only control as many attributes as there were tags.
+In the early days of the web, people used to style their pages using explicit styling tags such as `<font>`, `<center>` and `<strike>` (all of which have long been **deprecated** and should never be used today). This was inflexible, difficult to maintain, and conflated _presentation_ with the document structure.
 
-CSS emerged in the mid-90s as a way to make styling webpages easier. Its core
-idea was replace explicit styling in HTML with _styling rules_ which could be
-applied to multiple elements; this would have the benefits of (a) reducing
-duplication, and (b) separating styling instructions from content, making
-debugging easier.
+CSS emerged in the mid-90s as a way to make styling webpages easier. Its core idea was replace explicit styling in HTML with _styling rules_ which could be applied to multiple elements; this would have the benefits of (a) reducing duplication, and (b) separating styling instructions from content.
 
-CSS works by selecting some group of elements (using a special reference called
-a **selector**) and defining a set of properties and values to apply to that
-group of elements. The general syntax for this is:
+CSS works by selecting some group of elements (using a special reference called a **selector**) and defining a set of properties and values to apply to that group of elements. The general syntax for this is:
 
 ```css
 selector {
@@ -127,19 +121,11 @@ A specific example is
 }
 ```
 
-- This looks similar to a JS object literal; however, one important difference
-  is that key-value pairs are separated by _semicolons_ instead of _commas_.
+- This looks similar to a JS object literal; however, one important difference is that key-value pairs are separated by _semicolons_ instead of _commas_.
 
-Since CSS is just a collection of style rules, one key concern is what happens
-if two rules disagree. CSS has two mechanisms to resolve these disagreements
-when they come up.
+Since CSS is just a collection of style rules, one key concern is: what happens if two rules disagree? CSS has two mechanisms to resolve these disagreements when they come up.
 
-The first is that, if two rules disagree about the value that a property (e.g.
-'background-color') should have, a property called **specificity** can be
-calculated for each selector, and the selector with higher specificity will win
-out. The short version of how specificity works is that IDs are more 'specific'
-than classes, which are more 'specific' than tags, which are more 'specific'
-than traits inherited from parent elements.
+The first is that, if two rules disagree about the value that a property (e.g. 'background-color') should have, a property called **specificity** can be calculated for each selector, and the selector with higher specificity will win out. The short version of how specificity works is that IDs are more 'specific' than classes, which are more 'specific' than tags, which are more 'specific' than properties inherited from parent elements.
 
 - Specificity is actually a very precise calculation:
   - +1000pts for each inline style attribute
@@ -148,14 +134,9 @@ than traits inherited from parent elements.
   - +1pt for each element or pseudo-element tag
 
 - For a more detailed explanation, see this [blog
-  post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)
-  on CSS specificity, or play around with this [CSS specificity
-  calculator](http://specificity.keegan.st/).
+  post](http://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/) on CSS specificity, or play around with this [CSS specificity calculator](http://specificity.keegan.st/).
 
-The second mechanism handles an edge case of the first: what happens if two
-_equally specific_ rules disagree? In that case, CSS rules that come 'later'
-(lower in the file) beat earlier ones. This kind of behavior is called
-"cascading", and is where the "C" in CSS comes from.
+The second mechanism handles when two _equally specific_ rules disagree. In that case, the last rule that is read by the browser wins!  This kind of behavior is called "cascading", and is where the "C" in CSS comes from.
 
 To add CSS to a page, either include it
 
@@ -164,23 +145,33 @@ To add CSS to a page, either include it
 1. Between two `<style>` tags, typically in the the `<head>` of the document.
 
 1. **Most Common** In a separate file referred to by a `<link>` tag, also
-  typically in the the `<head>`. The syntax for using a `<link>` tag is `<link
-  rel="stylesheet" type="text/css" href="...">` where 'href' is set to the
-  location of the desired stylesheet.
+  typically in the the `<head>`. The syntax for using a `<link>` tag is `<link rel="stylesheet" type="text/css" href="...">` where 'href' is set to the location of the desired stylesheet.
 
 #### CSS Best Practices: Selectors
 
-1. In general, we want to _avoid inline styles_ - it's best to keep all your styles
-  in one place, on a stylesheet.
+1. AVOID INLINE STYLES. It's best to keep all your styles in one place, within one or more stylesheets.
 
-1. USE IDs SPARINGLY. IDs should be reserved for emergency situations only,
-  when there is no other way to select an element. There are a lot of selectors to
-  use; it's rarely necessary to use an ID.
+1. USE IDs SPARINGLY. IDs should be reserved for those rare situations when you need to style an element _differently from every other element in your site_. There are a lot of selectors to use; it's rarely necessary to use an ID.
+
   [CSS Selectors Cheat Sheet](https://gist.github.com/magicznyleszek/809a69dd05e1d5f12d01)
+
+#### CSS Best Practices: Organizing Your CSS File
+
+As more and more rulesets are added to your CSS file, working within it can quickly become a challenge. Here are some things that can help make you more efficient when working with CSS:
+
+1. TAKE ADVANTAGE OF CASCADE, DON'T FIGHT IT. Organize the contents of your CSS files from the least specific to the most specific selectors.  Generally, this means the universal selector and tag selectors belong at the top of the page, followed by class and attribute selectors, id selectors, and lastly, media queries.
+
+1. ALPHABETIZE YOUR RULESETS AND DECLARATIONS.  While it takes a bit more effort initially, alphabetizing your rulesets and rules will save you loads of time finding specific rules when you need to modify them.
+
+1. BREAK UP LARGE FILES INTO SMALLER ONES.  The [`@import` CSS-rule](https://developer.mozilla.org/en-US/docs/Web/CSS/@import) allows us to break up our CSS files into smaller, more manageable ones.  Cascade still applies, so the order in which they are imported matters. One technique is to have a base file containing all of your tag selector styles, and then break up the remaining rulesets into component files (e.g., footer styles, form styles) and media query files.
+
+1. LEARN CSS VARIABLES.  [CSS variables (AKA, custom properties)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) make it possible to reuse values throughout your CSS.  This is not only easier than remembering or looking up values each time you need to use them, it can make implementing sitewide changes a relatively straightforward exercise.
+
+1. LEARN TO USE THE DEVELOPER TOOLS.  The developer tools in the browser will show you which rules override others; will often provide the exact filename and line number for the rules you want to edit; and allow you to experiment with styles in a non-destructive way.
 
 #### CSS Best Practices: Colors
 
-In general, we want to use hexadecimal colors, like so:
+There are 6 different ways to specify color in CSS.  They are: keyword, hexadecimal, RGB, RGBA, HSL, and HSLA.  All of these formats are reduced to RGB/A by the browser.  In general, we want to use hexadecimal colors, whenever we aren't specifying transparency using the _alpha channel_ provided in the RGBA or HSLA formats.
 
 ```css
 .article-header {
@@ -190,26 +181,41 @@ In general, we want to use hexadecimal colors, like so:
 }
 ```
 
-### Code-Along: Valerie's Veggie Shop
+#### CSS Best Practices: Fonts
 
-Together we are going to look at our good friend Valerie's proposal for her
-website. Valerie has been so gracious to provide us with what she wants to be
-included on her website. Let's help out our good friend Valerie!
+We don't know what fonts are installed on our users' computers, so we always specify a generic font family as a back up (i.e., `san-serif` or `serif`).  The generic should be the last in the list of supplied `font-family` values.  Note that specific font names are quoted, but the generic is not.
 
-#### HTML Best Practices: Inputs
-
-Often websites like Valerie's need to get input from the user - names, addresses,
-and other information. When using the `<input>` element, it should ALWAYS be
-wrapped in a `<form>`. This is helpful both for accessibility (screen readers)
-and for accessing that data using JavaScript.
-Input elements should also be wrapped in a label element:
-
-```html
-<label>Last Name <input type="text" name="lastName" /></label>
+```css
+.site-nav {
+  /* If there's no Roboto available try Arial
+     If there's no Arial use the default sans-serif
+     font installed on the system.
+  */
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
 ```
 
-Wrapping the input in a label allows us to avoid using the `for` attribute on
-the label and an `id` on the input.
+#### CSS Best Practices: CSS Units
+
+We cover [CSS units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) in more detail in another class, but here's a quick overview of them and some general hints about when we use them:
+
+|    Unit    |    Description   |     Usage    |
+|:----------:|:----------------:|:------------:|
+|     px     | Referred to as absolute units because px (pixel) units will always be the same size regardless of any other related settings. | Most frequently with font sizes, margins, padding, max- and min- properties. |
+|   em, rem  | Relative to the current element's font-size (em), or the _root_ font-size (rem).  When used to set the font-size of an element, em is relative to the element's inherited size. | Most frequently with font sizes, margins, padding, widths or heights that may need to be changed but remain relative to other elements. |
+|   vh, vw   | Relative to the viewport width (vw), where one unit is equal to 1/100th of the viewport's current width, or the viewport height (vh), where one unit is equal to 1/100th of the viewport's current height. | Most frequently with width and height of structural page elements.  Commonly used in responsive design. |
+|      %     | Percentages are relative values.  What the percentage is relative to, is determined by the property associated with the percentage value. | Most often used with width. Can be helpful to approximate intrisic sizing. |
+
+### Code-Along: Valerie's Veggie Shop
+
+Together we are going to look at our good friend Valerie's proposal for her website. Valerie has been so gracious to provide us with what she wants to be included on her website.  Here are the steps we'll take to build her site:
+
+1. Review the contents and map out our structure.
+
+1. Markup our [index.html](index.html) file using semantic tags.
+
+1. Add CSS styles to approximate the design we've been supplied being careful to follow the best practices outlined above.
+
 
 ### Lab: Create a Cookie Site
 
@@ -221,8 +227,8 @@ Here are some sites you might want to bookmark, if you haven't already.
 
 - [HTML5 Cheatsheet](http://htmlcheatsheet.com/)
 - [CSS Cheatsheet](http://htmlcheatsheet.com/css/)
-- [LEAVE CSS ALONE!](https://christianheilmann.com/2016/10/05/can-we-stop-bad-mouthing-css-in-developer-talks-please/)
-- [Learn to Code HTML & CSS](https://learn.shayhowe.com/)
+- [Semantic HTML](https://www.pluralsight.com/guides/semantic-html)
+- [HTML5 Element Flowchart](http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf)
 - [Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 - [Introduction to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS)
 
