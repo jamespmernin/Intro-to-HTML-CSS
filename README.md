@@ -302,7 +302,7 @@ to follow the best practices outlined above.
 
 ### Lab: Create a Cookie Site
 
-Now that we've built a site together, let's take a look at [cookie site lab](https://git.generalassemb.ly/ga-wdi-boston/html-css-lab).
+Now that we've built a site together, let's take a look at [portfolio site lab](https://git.generalassemb.ly/erica-salling/html-portfolio-lab).
 
 ## Additional Resources
 
