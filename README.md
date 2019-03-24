@@ -299,7 +299,7 @@ included on her website. Here are the steps we'll take to build her site:
 1. Add CSS styles to approximate the design we've been supplied being careful
 to follow the best practices outlined above.
 
-### Lab: Create a Cookie Site
+### Lab: Create a Portfolio Site
 
 Now that we've built a site together, let's take a look at [portfolio site lab](https://git.generalassemb.ly/erica-salling/html-portfolio-lab).
 
