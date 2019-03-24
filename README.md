@@ -10,7 +10,6 @@ Developers should, at the end of the lesson, be able to:
 - Add CSS to an HTML file by linking to an external stylesheet with `<link>`.
 - Explain at a high level how CSS styling works.
 - Write CSS and use it to add styling to a basic page.
-- Deploy a basic web page to GitHub Pages.
 
 ## Preparation
 
