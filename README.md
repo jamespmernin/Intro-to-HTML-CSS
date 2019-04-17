@@ -13,7 +13,7 @@ Developers should, at the end of the lesson, be able to:
 
 ## Preparation
 
-1. [Fork and clone](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone) this repository.
+1. Fork and clone this repository.
 1. Create a new branch, `training`, for your work.
 1. Install dependencies with `npm install`.
 1. Run with `grunt serve`
@@ -22,7 +22,7 @@ Developers should, at the end of the lesson, be able to:
 
 Let's go over the basics of HTML and CSS! Most of you should have some
 experience with this stuff already, since you completed the
-[myGA](https://my.generalassemb.ly/) pre-work and each built a simple website
+myGA pre-work and each built a simple website
 as part of your admissions process.
 
 ### HTML
