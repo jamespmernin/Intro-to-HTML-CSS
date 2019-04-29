@@ -105,7 +105,7 @@ more in jQuery).
 |:-----------:|:------------:|
 | [`id`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/id) | Value can only be used once, elements can only have max of one ID. Creates a unique identifier for an element. |
 | [`class`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class) | Value can be used multiple times, elements can have many classes. |
-| [`data-*`](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/data-%2A) | Very helpful when used with the CSS content property and jQuery. Allows data to be bound to HTML element using custom `data-<custom>="<custom value>"` convention. |
+
 
 #### HTML Best Practices: Forms and Inputs
 
