@@ -289,7 +289,7 @@ included on her website. Here are the steps we'll take to build her site:
 
 1. Markup our [index.html](index.html) file using semantic tags.
 
-1. Add CSS styles to approximate the design we've been supplied being careful
+1. Add CSS styles to approximate the design we've created in Step 1. Be careful
 to follow the best practices outlined above.
 
 ## Additional Resources
