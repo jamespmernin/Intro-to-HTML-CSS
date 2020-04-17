@@ -11,11 +11,6 @@ Developers should, at the end of the lesson, be able to:
 - Explain at a high level how CSS styling works.
 - Write CSS and use it to add styling to a basic page.
 
-## Preparation
-
-1. Fork and clone this repository.
-1. Install dependencies with `npm install`.
-
 ## Overview
 
 Let's go over the basics of HTML and CSS! Most of you should have some
@@ -294,7 +289,7 @@ included on her website. Here are the steps we'll take to build her site:
 
 1. Markup our [index.html](index.html) file using semantic tags.
 
-1. Add CSS styles to approximate the design we've been supplied being careful
+1. Add CSS styles to approximate the design we've created in Step 1. Be careful
 to follow the best practices outlined above.
 
 ## Additional Resources
