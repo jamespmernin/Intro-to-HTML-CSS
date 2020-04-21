@@ -279,7 +279,7 @@ here's a quick overview of them and some general hints about when we use them:
 |  vh, vw  | Relative to the viewport width (vw), where one unit is equal to 1/100th of the viewport's current width, or the viewport height (vh), where one unit is equal to 1/100th of the viewport's current height. | Most frequently with width and height of structural page elements. Commonly used in responsive design. |
 |   %   | Percentages are relative values. What the percentage is relative to, is determined by the property associated with the percentage value. | Most often used with width. Can be helpful to approximate intrisic sizing. |
 
-### Code-Along: Valerie's Veggie Shop
+### Lab: Valerie's Veggie Shop
 
 Together we are going to look at our good friend Valerie's proposal for her
 website. Valerie has been so gracious to provide us with what she wants to be
