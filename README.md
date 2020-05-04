@@ -113,8 +113,10 @@ For accessibility, `<input>` elements should have an `id` attribute, which is
 used in combination with the `for` attribute on a `<label>`:
 
 ```html
-<label for="lastname">Last Name</label>
-<input type="text" id="lastname">
+<form>
+  <label for="lastname">Last Name</label>
+  <input type="text" id="lastname">
+</form>
 ```
 
 ### CSS
