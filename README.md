@@ -114,7 +114,7 @@ used in combination with the `for` attribute on a `<label>`:
 
 ```html
 <label for="lastname">Last Name</label>
-<input type="text" name="lastName" id="lastname">
+<input type="text" id="lastname">
 ```
 
 ### CSS
