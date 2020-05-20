@@ -113,8 +113,10 @@ For accessibility, `<input>` elements should have an `id` attribute, which is
 used in combination with the `for` attribute on a `<label>`:
 
 ```html
-<label for="lastname">Last Name</label>
-<input type="text" name="lastName" id="lastname">
+<form>
+  <label for="lastname">Last Name</label>
+  <input type="text" id="lastname">
+</form>
 ```
 
 ### CSS
@@ -289,7 +291,7 @@ included on her website. Here are the steps we'll take to build her site:
 
 1. Markup our [index.html](index.html) file using semantic tags.
 
-1. Add CSS styles to approximate the design we've created in Step 1. Be careful
+1. Add CSS styles to create a beautiful design using our semantic HTML. Be careful
 to follow the best practices outlined above.
 
 ## Additional Resources
