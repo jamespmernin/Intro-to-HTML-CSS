@@ -286,7 +286,7 @@ Together we are going to look at our good friend Valerie's proposal for her
 website. Valerie has been so gracious to provide us with what she wants to be
 included on her website. Here are the steps we'll take to build her site:
 
-1. Review the contents and map out our structure.
+1. Review the contents and map out our HTML structure, remember to be semantic.
 
 1. Markup our [index.html](index.html) file using semantic tags.
 
