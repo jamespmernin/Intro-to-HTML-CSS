@@ -270,8 +270,7 @@ that specific font names are quoted, but the generic is not.
 
 #### CSS Best Practices: CSS Units
 
-We cover [CSS units](https://developer.mozilla.org/en-US/docs/Learn/CSS/
-Introduction_to_CSS/Values_and_units) in more detail in another class, but
+We cover [CSS units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units) in more detail in another class, but
 here's a quick overview of them and some general hints about when we use them:
 
 |  Unit  |  Description  |   Usage  |
